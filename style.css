@@ -1,0 +1,495 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #main {
+    width: 100%;
+  }
+  .nav {
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 9;
+  }
+  .nav p {
+    font-size: 17px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      cursor: pointer;
+  }
+  .nav-content {
+    height: 0.02vh;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transition: all ease 0.3s;
+    display: flex;
+    cursor: pointer;
+  }
+  .nav:hover .nav-content {
+    height: 10vh;
+  }
+  .nav:hover .nav-content h3 {
+    opacity: 1;
+  }
+  .nc-content {
+    height: 100vh;
+    width: calc(100%/3);
+    display: flex;
+    padding: 30px 30px;
+    border-right: 0.2px solid rgba(128, 128, 128, 0.198);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .nc-content h3 {
+    font-weight: 500;
+    opacity: 0;
+    transition: all ease 0.5s;
+    color: #fff;
+  }
+  #nc1 {
+    background-color: #fff;
+  }
+  #nc2 {
+    background-color: rgba(255, 255, 255, 0.069);
+    backdrop-filter: blur(10px);
+  }
+  #nc3 {
+    background-color: rgba(255, 255, 255, 0.069);
+    backdrop-filter: blur(10px);
+  }
+  #nc1 h3 {
+    color: #000;
+  }
+  .half-nav{
+    height: 14vh;
+    width: 60vh;
+    background-color: transparent;
+    position: fixed;
+    z-index: 99999999;
+    margin-left: 70%;
+    margin-top: 5.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0px 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  }
+  #main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/YETI_Illustration_ArtDirection_Home2.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .page1 h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/BARRIERE_Illustration_ArtDirection_HOME4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .page2 h1 {
+    position: absolute;
+    flex-shrink: 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/R16_Illustration_ArtDirection_H.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page3 h1 {
+    position: absolute;
+    flex-shrink: 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/OFFSQUARE_Illustration_ArtDirection_Home2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999999;
+    overflow: hidden;
+  }
+  .page4 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/Devialet_home_H1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page5 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+   .page6{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/GOOGLE_Wallpaper_Illustration_H.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page6 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page7{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/ANTINOMY_Illustration_ArtDirection4_H.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page7 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page8{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/36DAYSOFTYPE_Typography_Illustration_2021_H.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page8 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page9{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://dev.plasticbionic.com/wp-content/uploads/Ayco_Illustration_ArtDirection_HOME2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page9 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+ .page10{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/ECHONOVA_Illustration_ArtDirection_H4-1.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page10 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page11{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/LVMH_Pattern_Illustration_H3.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+  .page11 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page12{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/HUBLOT_Corporate_Illustration_1_H.jpg);
+    background-size: cover;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+    background-position: center;
+  }
+    .page12 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page13{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/BUYtv_Identity_Illustration_H_N-1.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page13 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page14{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/SCALE_Identity_Illustration_H_New2-1.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page14 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page15{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/NUAGESURMER_Illustration_1A.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page15 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    font-size: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .page16{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/FastCompany_Magazine_Illustration_1.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page16 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page17{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/36DAYSOFTYPE_Typography_Illustration_1_H4.jpg );
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page17 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page18{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/C3P_GraphicDesign_Illustration_1.jpg);
+    background-position: center;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  }
+    .page18 h1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    flex-shrink: 0;
+    transform: translate(-50%, 0%);
+  }
+  .page19{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://dev.plasticbionic.com/wp-content/uploads/Bic1_Home2.jpg);
+    background-size: cover;
+    background-position: center;
+        position: relative;
+    z-index: 99999;
+    overflow: hidden;
+  } 
+    .page19 h1 {
+    position: absolute;
+    top: 100%;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  } 
+  .page20 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page20 h1 {
+    color: #fff;
+    font-size: 180px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .page20 h1::before{
+    content: "";
+    height: 1.1vh;
+    width: 1%;
+    bottom: 0%;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    transition: all ease 0.5s;
+  }
+  .page20 h1:hover::before{
+    width: 100%;
+    opacity: 1;
+  }
+  /* .page1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  #pgs h1 {
+    color: #fff;
+    font-size: 180px;
+    font-weight: 400;
+    text-align: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #pgs h1::before{
+    content: "";
+    height: 1.1vh;
+    width: 1%;
+    bottom: 0%;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    transition: all ease 0.5s;
+  }
+  #pgs h1:hover::before{
+    height: 1.1vh;
+    width: 100%;
+    opacity: 1;
+  }
+ #pgs{
+    display: flex;
+    flex-direction: column;
+ }
+
+  #page21 {
+    height: 100vh;
+    width: 100%;
+    background-color:transparent;
+  }
+  
